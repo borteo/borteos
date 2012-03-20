@@ -6,8 +6,6 @@ $(document).ready(function() {
     e.preventDefault();
   });
   
-  $("#new_contact").validate();
-  
   $('#about-me .picture').popover({
     placement: "top",
     delay: { show: 10, hide: 200 }
