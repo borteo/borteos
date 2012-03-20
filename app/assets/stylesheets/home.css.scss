@@ -184,20 +184,29 @@ p {
 
 #contacts {
   padding-top: 50px;
+  padding-bottom: 70px;
   h2:first-letter {
-      background: #F7F57E;
-      font-size: 55px;
-      letter-spacing: 4px;
-      @include text-shadow((#FFEDC9 2px 2px 0px), (#FFEDC9 3px 3px 0px));
+    background: #F7F57E;
+    font-size: 55px;
+    letter-spacing: 4px;
+    @include text-shadow((#FFEDC9 2px 2px 0px), (#FFEDC9 3px 3px 0px)); 
+  }
+  .details {
+    padding: 30px 0px;
+    .contact {
+      display: inline-block;
+      font-weight: bold;
+      width: 120px;
+      @include text-shadow(#FFF 0px 1px 0px);  
     }
-  .form-horizontal .control-label {
-    font-size: 16px;
-    color: #888;
+    span {
+      padding-right: 20px;
+    }
+    i {
+      margin-top: 6px;
+    }
   }
   
-  .error {
-    color: #990000;
-  }
 }
 
 .box {

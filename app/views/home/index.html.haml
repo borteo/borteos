@@ -78,16 +78,19 @@
   .container
     .row
       %h2 Contacts
-    .row
-      .span6
-        %p
-          %strong Mobile
-        %p Italian: +39 349 4246616
-        %p Dutch: +31 621 360018
-      
-      .span5
-        %p 
-          Send me a message:
-        = simple_form_for @contacts, :remote => true, :html => {:class => 'form-horizontal' } do |f|
-          = render :partial => "contacts/new", :locals => {:f => f}
-    
+    .row.details
+      %p
+        %span.contact Mobile
+        %span
+          =image_tag "it-icon.png"
+          +39 349 4246616 
+        =image_tag "nl-icon.png"
+        +31 621 360018
+      %p 
+        %span.contact E-mail
+        %i.icon-envelope
+        borgato.matteo (at) gmail dot com
+      %p 
+        %span.contact Skype
+        =image_tag "icon-skype.png"
+        matteo_borgato
