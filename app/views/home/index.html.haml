@@ -1,0 +1,93 @@
+=stylesheet_link_tag "home"
+
+%section#home
+  .container-small
+    %h1 Matteo Borgato 
+    %h2 Front-end Developer
+    %h3 Amsterdam - The Netherlands
+    
+    %ul.social-network
+      %li
+        %a{ :href => "http://www.facebook.com/matteo.borgato", :target => "_blank"}
+          =image_tag "facebook.png"
+      %li
+        %a{ :href => "https://twitter.com/#!/borteo", :target => "_blank"}
+          =image_tag "twitter.png"
+      %li
+        %a{ :href => "http://nl.linkedin.com/pub/matteo-borgato/24/920/97a/en", :target => "_blank"}
+          =image_tag "linkedin.png"
+      
+%section#portfolio
+  .container
+    %h2 Portfolio  
+    .main
+      .view.view-second
+        =image_tag("/assets/fairandsquare.png")
+        .mask
+        .content
+          %h3 Fair and Square
+          %p 
+            A new brand by Craft Resource Center for all international traders who believe in a more equal distribution of power between developed countries and developing countries.
+          %a.info Visit
+
+      .view
+      .view
+      .view
+      
+%section#about-me
+  .container
+    .row
+      %h2 About me
+    .row
+      .span
+        =image_tag "me.png", :class => "picture", :title => "Hire me!", "data-content" => "I am looking for a job"
+      .span9
+      %p
+        Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
+      %p
+        I am a front-end developer, with more than 4 years under the belt. Currently I live in the beautiful Amsterdam - The Netherlands.
+      %p
+        I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
+  
+    #skills
+      %h3
+        Skills
+      %p
+        %span.label.label-info.front CSS
+        %span.label.label-info.front HTML5
+        %span.label.label-info.front JavaScript
+        %span.label.label-info.front Jquery
+        %span.label.label-info.front Mootools
+        %span.label.back Ruby on Rails
+        %span.label.back PHP
+        %span.label.back Magento
+        %span.label.general E-commerce
+      %p
+        %span.label.label-success.db MySQL
+        %span.label.label-success.db Oracle
+        %span.label.label-success.db PostgreSQL
+        %span.label.label-success.db MongoDB
+        %span.label.label-black.apps Photoshop
+        %span.label.label-black.apps Illustrator
+    
+    #twitter
+      .content
+        %p 
+    
+%section#contacts
+  .container
+    .row
+      %h2 Contacts
+    .row
+      .span6
+        %p
+          %strong Mobile
+        %p Italian: +39 349 4246616
+        %p Dutch: +31 621 360018
+      
+      .span5
+        %p 
+          Send me a message:
+        = simple_form_for @contacts, :remote => true, :html => {:class => 'form-horizontal' } do |f|
+          = render :partial => "contacts/new", :locals => {:f => f}
+    
