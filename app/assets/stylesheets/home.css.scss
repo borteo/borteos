@@ -144,18 +144,21 @@ p {
 }
 
 #about-me {
+  h2 {
+    padding-bottom: 25px;
+  }
   h2:first-letter {
-     background: #3A87AD;
-     font-size: 55px;
-     letter-spacing: 4px;
-     @include text-shadow((#70A8C1 2px 2px 0px), (#70A8C1 3px 3px 0px));
-   }
-   h3 {
-     font-family: 'Mr De Haviland', cursive;
-     font-weight: 200;
-     font-size: 35px;
-     color: #AEAEAE;
-     @include text-shadow(#fff 1px 1px 0px);
+    background: #3A87AD;
+    font-size: 55px;
+    letter-spacing: 4px;
+    @include text-shadow((#70A8C1 2px 2px 0px), (#70A8C1 3px 3px 0px));
+  }
+  h3 {
+    font-family: 'Mr De Haviland', cursive;
+    font-weight: 200;
+    font-size: 35px;
+    color: #AEAEAE;
+    @include text-shadow(#fff 1px 1px 0px);
    }
    
   .container {
