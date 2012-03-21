@@ -7,12 +7,14 @@ $(document).ready(function() {
   });
   
   $('#about-me .picture').popover({
-    placement: "top",
+    placement: "right",
     delay: { show: 10, hide: 200 }
   });
   
+  /*
   $.getJSON("http://twitter.com/statuses/user_timeline/borteo.json?callback=?", function(data) {
     console.log(data[0].text);
   });
+  */
   
 });

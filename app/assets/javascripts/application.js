@@ -6,12 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require h5bp
-//= require bootstrap-tooltip
-//= require bootstrap-scrollspy
-//= require bootstrap-popover
-//= require_tree
-//= require jquery.scrollTo-min
-//= require jquery.validate.min
+//= require_tree .
+//= require bootstrap
+//= require jquery.scrollTo
 //= require home
-
