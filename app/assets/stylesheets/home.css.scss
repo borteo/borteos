@@ -194,11 +194,8 @@ p {
     @include border-radius(150px);
   }
   .picture:hover {
-    -webkit-transform:rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
+    @include transform(rotate(-5deg));
+    @include transition-duration(0.5s);
   }
   h3 {
     font-size: 50px;
@@ -313,115 +310,47 @@ body {
 
 
 .view-second img {
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   -o-transition: all 0.2s ease-in;
-   -ms-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
+  @include transition (all 0.2s ease-in);
 }
 .view-second .mask {
    background-color: rgba(115,146,184, 0.7);
    width: 500px;
    padding: 60px;
    height: 500px;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform: translate(265px, 145px) rotate(45deg);
-   -moz-transform: translate(265px, 145px) rotate(45deg);
-   -o-transform: translate(265px, 145px) rotate(45deg);
-   -ms-transform: translate(265px, 145px) rotate(45deg);
-   transform: translate(265px, 145px) rotate(45deg);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
+   @include opacity(0.0);
+   @include transform(translate(265px, 145px) rotate(45deg));
+   @include transition (all 0.2s ease-in-out);
 }
 .view-second h3 {
    border-bottom: 1px solid white;
    background: transparent;
    margin: 20px 40px 0px 40px;
-   -webkit-transform: translate(200px, -200px);
-   -moz-transform: translate(200px, -200px);
-   -o-transform: translate(200px, -200px);
-   -ms-transform: translate(200px, -200px);
-   transform: translate(200px, -200px);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
+   @include transform(translate(200px, -200px));
+   @include transition(all 0.2s ease-in-out);
 }
 .view-second p {
-   -webkit-transform: translate(-200px, 200px);
-   -moz-transform: translate(-200px, 200px);
-   -o-transform: translate(-200px, 200px);
-   -ms-transform: translate(-200px, 200px);
-   transform: translate(-200px, 200px);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
+  @include transform(translate(-200px, 200px));
+  @include transition(all 0.2s ease-in-out);
 }
 .view-second a.info {
-   -webkit-transform: translate(0px, 150px);
-   -moz-transform: translate(0px, 150px);
-   -o-transform: translate(0px, 150px);
-   -ms-transform: translate(0px, 150px);
-   transform: translate(0px, 150px);
-   -webkit-transition: all 0.2s 0.1s ease-in-out;
-   -moz-transition: all 0.2s 0.1s ease-in-out;
-   -o-transition: all 0.2s 0.1s ease-in-out;
-   -ms-transition: all 0.2s 0.1s ease-in-out;
-   transition: all 0.2s 0.1s ease-in-out;
+  @include transform(translate(0px, 150px));
+  @include transition(all 0.2s 0.1s ease-in-out);
 }
 .view-second:hover .mask {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-   -webkit-transform: translate(-80px, -125px) rotate(45deg);
-   -moz-transform: translate(-80px, -125px) rotate(45deg);
-   -o-transform: translate(-80px, -125px) rotate(45deg);
-   -ms-transform: translate(-80px, -125px) rotate(45deg);
-   transform: translate(-80px, -125px) rotate(45deg);
+  @include opacity(1.0);
+  @include transform(translate(-80px, -125px) rotate(45deg));
 }
 .view-second:hover h3 {
-   -webkit-transform: translate(0px,0px);
-   -moz-transform: translate(0px,0px);
-   -o-transform: translate(0px,0px);
-   -ms-transform: translate(0px,0px);
-   transform: translate(0px,0px);
-   -webkit-transition-delay: 0.3s;
-   -moz-transition-delay: 0.3s;
-   -o-transition-delay: 0.3s;
-   -ms-transition-delay: 0.3s;
-   transition-delay: 0.3s;
+  @include transform(translate(0px,0px));
+  @include transition-delay(0.3s);
 }
 .view-second:hover p {
-   -webkit-transform: translate(0px,0px);
-   -moz-transform: translate(0px,0px);
-   -o-transform: translate(0px,0px);
-   -ms-transform: translate(0px,0px);
-   transform: translate(0px,0px);
-   -webkit-transition-delay: 0.4s;
-   -moz-transition-delay: 0.4s;
-   -o-transition-delay: 0.4s;
-   -ms-transition-delay: 0.4s;
-   transition-delay: 0.4s;
+  @include transform(translate(0px,0px));
+  @include transition-delay(0.4s);
 }
 .view-second:hover a.info {
-   -webkit-transform: translate(0px,0px);
-   -moz-transform: translate(0px,0px);
-   -o-transform: translate(0px,0px);
-   -ms-transform: translate(0px,0px);
-   transform: translate(0px,0px);
-   -webkit-transition-delay: 0.5s;
-   -moz-transition-delay: 0.5s;
-   -o-transition-delay: 0.5s;
-   -ms-transition-delay: 0.5s;
-   transition-delay: 0.5s;
+   @include transform(translate(0px,0px));
+   @include transition-delay(0.5s);
 }
 
 
