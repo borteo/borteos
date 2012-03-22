@@ -359,11 +359,16 @@ footer {
   background: #23536B;
   color: white;
   padding: 20px 0px;
-  a {
+  @include text-shadow(#FFF 0px 0px 5px);
+  a, a:hover {
     text-decoration: underline;
+    color: #EFEFEF;
   }
 }
 
+
+
+// Media 
 // Landscape phones and down
 @media (max-width: 480px) {
    h1 {
