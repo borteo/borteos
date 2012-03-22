@@ -8,6 +8,24 @@
   font-size: 16px;
 }
 
+.tooltip-inner {
+  background-color: #C25552;
+  border-radius: 4px 4px 4px 4px;
+  color: white;
+  font-size: 13px;
+  font-family: 'Cantata One',serif;
+  font-weight: 100;
+  margin-top: 8px;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom: 5px solid #C25552;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    left: 50%;
+    margin-left: -5px;
+    top: 8px;
+}
+
 #main {
   overflow: hidden;
 }
@@ -416,3 +434,39 @@ footer {
     text-decoration: underline;
   }
 }
+
+// Landscape phones and down
+@media (max-width: 480px) {
+   h1 {
+     font-size: 100px;
+     padding-bottom: 30px;
+   }
+   h2 {
+     font-size: 30px;
+   }
+   .view {
+     height: 180px;
+     width: 260px;
+   }
+
+   #contacts .details .contact, #contacts .details span {
+     display: block;
+   }
+}
+
+/*
+// Landscape phone to portrait tablet
+@media (max-width: 768px) {
+  
+}
+ 
+// Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 980px) {
+  
+}
+ 
+// Large desktop
+@media (min-width: 1200px) {
+  
+}
+*/

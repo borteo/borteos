@@ -12,11 +12,8 @@ group :assets do
 end
 
 gem 'haml-rails' # Optional - to generate haml
-
 gem 'jquery-rails'
-
 gem 'bootstrap-sass', '~> 2.0.1'
-gem 'simple_form'
 
 group :test do
   # Pretty printed test output
