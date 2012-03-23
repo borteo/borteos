@@ -192,6 +192,7 @@ p {
     border: 1px solid #DDD;
     @include box-shadow(#999 0px 2px 4px);
     @include border-radius(150px);
+    @include transition(all 0.2s ease-in-out);
   }
   .picture:hover {
     @include transform(rotate(-5deg));
