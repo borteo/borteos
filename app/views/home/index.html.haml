@@ -85,14 +85,14 @@
       .span
         =image_tag "me.png", :class => "picture", :title => "Hire me!", "data-content" => "I am looking for a job"
       .span9
-      %p
-        Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
-      %p
-        I am a front-end developer, with more than 4 years under the belt. Currently I live in the beautiful Amsterdam - The Netherlands.
-      %p
-        I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
-      %p
-        =link_to "Download my Résumé", '/matteo_borgato_cv.pdf', :class => "btn btn-info"
+        %p.havre
+          Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
+        %p.havre
+          I am a front-end developer, with more than 4 years under the belt. Currently I live in the beautiful Amsterdam - The Netherlands.
+        %p.havre
+          I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
+        %p
+          =link_to "Download my Résumé", '/matteo_borgato_cv.pdf', :class => "btn btn-info"
 
     .row-fluid
       #skills
@@ -120,18 +120,18 @@
     .row-fluid
       %h2 Contacts
     .row-fluid.details
-      %p
+      %p.havre
         %span.contact Mobile
         %span
           =image_tag "it-icon.png"
           +39 349 4246616 
         =image_tag "nl-icon.png"
         +31 621 360018
-      %p 
+      %p.havre
         %span.contact E-mail
         %i.icon-envelope
         borgato.matteo (at) gmail dot com
-      %p 
+      %p.havre
         %span.contact Skype
         =image_tag "icon-skype.png"
         matteo_borgato
