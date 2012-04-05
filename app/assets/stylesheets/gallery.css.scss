@@ -55,32 +55,7 @@ h1 {
   font-weight: 200;
   font-size: 40px;
 }
-.rg-view{
-	height:30px;
-}
-.rg-view a{
-	display:block;
-	float:right;
-	width:16px;
-	height:16px;
-	margin-right:3px;
-	background:#464646 url(/assets/views.png) no-repeat top left;
-	border:3px solid #464646;
-	@include opacity(0.8);
-}
-.rg-view a:hover{
-	@include opacity(1.0);
-}
-.rg-view a.rg-view-full{
-	background-position:0px 0px;
-}
-.rg-view a.rg-view-selected{
-	background-color:#6f6f6f;
-	border-color:#6f6f6f;
-}
-.rg-view a.rg-view-thumbs{
-	background-position:0px -16px;
-}
+
 .rg-loading{
 	width:46px;
 	height:46px;

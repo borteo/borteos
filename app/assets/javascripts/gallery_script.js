@@ -67,9 +67,7 @@ $(function() {
 				
 				// (not necessary) preloading the images here...
 				$items.add('<img src="/assets/ajax-loader.gif"/><img src="/assets/black.png"/>').imagesLoaded( function() {
-					// add options
-					_addViewModes();
-					
+
 					// add large image wrapper
 					_addImageWrapper();
 					
@@ -103,37 +101,7 @@ $(function() {
 				$esCarousel.elastislide( 'setCurrent', current );
 				
 			},
-			_addViewModes	= function() {
-				
-				// top right buttons: hide / show carousel
-				
-				var $viewfull	= $('<a href="#" class="rg-view-full"></a>'),
-					$viewthumbs	= $('<a href="#" class="rg-view-thumbs rg-view-selected"></a>');
-				
-				$rgGallery.prepend( $('<div class="rg-view"/>').append( $viewfull ).append( $viewthumbs ) );
-				
-				$viewfull.on('click.rgGallery', function( event ) {
-						if( mode === 'carousel' )
-							$esCarousel.elastislide( 'destroy' );
-						$esCarousel.hide();
-					$viewfull.addClass('rg-view-selected');
-					$viewthumbs.removeClass('rg-view-selected');
-					mode	= 'fullview';
-					return false;
-				});
-				
-				$viewthumbs.on('click.rgGallery', function( event ) {
-					_initCarousel();
-					$viewthumbs.addClass('rg-view-selected');
-					$viewfull.removeClass('rg-view-selected');
-					mode	= 'carousel';
-					return false;
-				});
-				
-				if( mode === 'fullview' )
-					$viewfull.trigger('click');
-					
-			},
+
 			_addImageWrapper= function() {
 				
 				// adds the structure for the large image and the navigation buttons (if total items > 1)
