@@ -201,7 +201,7 @@ p {
    margin-top: 10px;
    border: 1px solid #DDD;
    @include box-shadow(#999 0px 2px 4px);
-   @include border-radius(150px);
+   @include border-radius(50%);
    @include transition(all 0.2s ease-in-out);
  }
  .picture:hover {
