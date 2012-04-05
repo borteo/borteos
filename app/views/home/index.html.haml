@@ -1,3 +1,5 @@
+= stylesheet_link_tag "application"
+
 .container
   %section#home
     .row-fluid
@@ -135,3 +137,7 @@
         %span.contact Skype
         =image_tag "icon-skype.png"
         matteo_borgato
+        
+        
+-# Javascript at the bottom for fast page loading
+= javascript_include_tag "application"

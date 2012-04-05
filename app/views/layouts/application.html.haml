@@ -2,12 +2,11 @@
 = render "head"
 
 %body{ :class => "#{ controller.controller_name }", "data-spy" => "scroll", "data-target" => ".navbar", "data-offset" => "50"}
-  = render "header"
+
+  -if controller.controller_name == "home"
+    = render "header"
 
   #main{ :role => "main" }
     = yield
 
   = render "footer"
-
-  -# Javascript at the bottom for fast page loading
-  = javascript_include_tag "application"
