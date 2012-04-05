@@ -1,0 +1,50 @@
+= stylesheet_link_tag "application", "gallery"
+
+%script#img-wrapper-tmpl{:type => "text/x-jquery-tmpl"}
+  .rg-image-wrapper
+    {{if itemsCount > 1}}
+    .rg-image-nav
+      %a.rg-image-nav-prev{:href => "#"} Previous Image
+      %a.rg-image-nav-next{:href => "#"} Next Image
+    {{/if}}
+    .rg-image
+    .rg-caption-wrapper
+      .rg-caption{:style => "display:none;"}
+        %p
+    .rg-loading
+    
+
+.content
+  %h1 BorTeo photo gallery
+  #rg-gallery.rg-gallery
+    .rg-thumbs
+      / Elastislide Carousel Thumbnail Viewer
+      .es-carousel-wrapper
+        .es-nav
+          %span.es-nav-prev Previous
+          %span.es-nav-next Next
+        .es-carousel
+          %ul
+            %li
+              %a{:href => "#"}
+                %img{:alt => "Chioggia", "data-description" => "Sunny winter in Chioggia", "data-large" => "/assets/1.png", :src => "/assets/thumbs/1.png"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "Briccole", "data-description" => "Briccole", "data-large" => "/assets/2.png", :src => "/assets/thumbs/2.png"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "Tree", "data-description" => "Wrinkles", "data-large" => "/assets/3.png", :src => "/assets/thumbs/3.png"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "Bug", "data-description" => "Red-five _missing a leg", "data-large" => "/assets/4.png", :src => "/assets/thumbs/4.png"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "Coding", "data-description" => "Coding", "data-large" => "/assets/5.png", :src => "/assets/thumbs/5.png"}/
+                
+      / End Elastislide Carousel Thumbnail Viewer
+    / rg-thumbs
+  / rg-gallery
+  
+  
+
+= javascript_include_tag "gallery"
