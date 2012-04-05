@@ -1,6 +1,7 @@
 %footer#footer
   .container
     %small.copyright
-      Matteo Borgato, Copyright &copy; #{ Date.today.year } 
+      =link_to "Matteo Borgato", "http://matteoborgato.com"
+      Copyright &copy; #{ Date.today.year } 
       -if controller.controller_name == "home"
         =link_to "Return to Top", "#home", :class => "up"
