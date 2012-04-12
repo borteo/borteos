@@ -22,4 +22,16 @@ $(document).ready(function() {
   });
   */
   
+  var skillsView = $("#skills")
+  $("#skills-detail").click(function() {
+    if($(this).hasClass('hide-skills')) {
+      skillsView.find('.shown').fadeOut().removeClass('shown').addClass('hide');
+      $(this).text("show more").removeClass('hide-skills');
+    }
+    else {
+      skillsView.find('.hide').fadeIn().removeClass('hide').addClass('shown');
+      $(this).text("hide").addClass('hide-skills');
+    }
+  })
+  
 });
