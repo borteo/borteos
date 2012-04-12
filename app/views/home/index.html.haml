@@ -109,8 +109,6 @@
           %span.label.label-info.front Mootools
           %span.label.back Ruby on Rails
           %span.label.back PHP
-          %span.label.back Magento
-          %span.label.general E-commerce
         %p
           %span.label.label-success.db MySQL
           %span.label.label-success.db Oracle
@@ -118,6 +116,7 @@
           %span.label.label-success.db MongoDB
           %span.label.label-black.apps Photoshop
           %span.label.label-black.apps Illustrator
+          / add all the skills when click on more...
 
   %section#contacts
     .row-fluid
@@ -138,10 +137,15 @@
         %span.contact Skype
         =image_tag "icon-skype.png"
         matteo_borgato
-        
-      %p
+    
+    .row-fluid.share 
+      .span2
+        %a.twitter-share-button{:href => "https://twitter.com/borteo", "text" => "Matteo Borgato, Front-end Web Developer Portfolio", "via" => "borteo", "hashtags" => "Front-end, Web Developer", "data-related" => "borteo",  "data-lang" => "en", "data-size" => "large", "data-count" => "none"}
+          Tweet
+      .span3
         .g-plusone{"data-annotation" => "inline"}
-        
+      .span4
+        =facebook_like        
         
 -# Javascript at the bottom for fast page loading
 = javascript_include_tag "application"
