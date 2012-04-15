@@ -21,10 +21,10 @@
   background-color: #C25552;
   border-radius: 4px 4px 4px 4px;
   color: white;
- font-size: 13px;
- font-family: 'Cantata One',serif;
- font-weight: 100;
- margin-top: 8px;
+  font-size: 13px;
+  font-family: 'Cantata One',serif;
+  font-weight: 100;
+  margin-top: 8px;
 }
 .tooltip.bottom .tooltip-arrow {
    border-bottom: 5px solid #C25552;
@@ -170,10 +170,13 @@ p {
    letter-spacing: 4px;
    @include text-shadow((#F4A2A1 2px 2px 0px), (#F4A2A1 3px 3px 0px));
  }
+ .pull-right {
+   float: right;
+ }
 }
 
 #about-me {
- padding-top: 30px;
+ padding: 30px;
  h2 {
    padding-bottom: 25px;
  }
@@ -225,9 +228,9 @@ p {
 }
 
 #contacts {
- padding-top: 30px;
  margin-top: 50px;
- border-top: 2px solid #AAA;
+ padding: 0px 30px 0px 30px;
+ margin-bottom: 50px;
  h2:first-letter {
    background: #F7F57E;
    font-size: 55px;
@@ -249,8 +252,50 @@ p {
      margin-top: 6px;
    }
  }
- 
 }
+
+#share {
+  
+}
+
+#contacts:after {
+    @include transform(skew(2deg, 1deg));
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #DDDDDD;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    content: "";
+    height: 50%;
+    left: 2%;
+    padding: 0 0 1px;
+    position: absolute;
+    top: 50%;
+    width: 97.5%;
+    z-index: -1;
+}
+#contacts:before {
+    @include transform(skew(3deg, 2deg));
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #DDDDDD;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    content: "";
+    height: 50%;
+    left: 2%;
+    padding: 0 0 1px;
+    position: absolute;
+    top: 49%;
+    width: 97%;
+    z-index: -1;
+}
+
+#contacts {
+    background: -moz-linear-gradient(-45deg, #F5F5F5 1%, #F5F5F5 90%, #E5E5E5 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #DDD;
+    @include border-bottom-right-radius(40px 5px);
+    @include box-shadow(#E5EAED 1px 1px 1px);
+    position: relative;
+}
+
+
 
 .box {
  width: 440px;
@@ -273,7 +318,7 @@ body {
  @include box-shadow(#777 0px 1px 2px);
  cursor: default;
  float: left;
- margin: 10px;
+ margin-bottom: 15px;
  overflow: hidden;
  position: relative;
  text-align: center;

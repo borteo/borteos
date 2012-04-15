@@ -33,7 +33,7 @@
               %p 
                 A new brand by Craft Resource Center for all international traders who believe in a more equal distribution of power between developed countries and developing countries.
               =link_to "Visit", "http://fairandsquare.co.in/", :class => "info btn btn-large btn-inverse", :target => "_blank"
-      .span
+      .span.pull-right
         .main
           .view.view-second
             =image_tag("/assets/calcetto5.png")
@@ -58,7 +58,7 @@
                 Ironsmith based in Villanova, near Venice (Italy). This company offers wrought iron gates, fence, stairs, hanger and decorations.
               =link_to "Visit", "http://fer-inox.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
               
-      .span
+      .span.pull-right
         .main
           .view.view-second
             =image_tag("/assets/sappada.png")
@@ -157,8 +157,9 @@
         %span.contact Skype
         =image_tag "icon-skype.png"
         matteo_borgato
-    
-    .row-fluid.share 
+
+  %section#share
+    .row-fluid
       .span2
         %a.twitter-share-button{:href => "https://twitter.com/borteo", "text" => "Matteo Borgato, Front-end Web Developer Portfolio", "via" => "borteo", "hashtags" => "Front-end, Web Developer", "data-related" => "borteo",  "data-lang" => "en", "data-size" => "large", "data-count" => "none"}
           Tweet
