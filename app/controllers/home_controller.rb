@@ -4,8 +4,8 @@ class HomeController < ApplicationController
   end
 
   def download_pdf 
-    send_data("#{RAILS_ROOT}/public/matteo_borgato_cv.pdf", 
-      :filename => "matteo_borgato_cv.pdf",
+    send_data("#{RAILS_ROOT}/public/matteoborgato_cv.pdf", 
+      :filename => "matteoborgato_cv.pdf",
       :type => "application/pdf") 
   end
 
