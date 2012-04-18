@@ -1,4 +1,8 @@
 @import "compass/css3";
+$icons-layout:diagonal;
+@import "icons/*.png";
+@include all-icons-sprites;
+
 
 .label-black {
   background-color: #333;
@@ -132,7 +136,6 @@ p {
    left:50%;
    text-align:center;
    li {
-     display:block;
      float:left;
      list-style:none;
      margin:0;
@@ -140,20 +143,23 @@ p {
      margin-right: 20px;
      position:relative;
      right:60%;
-     img {
-       @include box-shadow(#AAA 0 2px 2px);
-       @include border-radius(30px);
-       border-top: 1px solid white;
-     }
-     img:hover {
-       @include box-shadow(#AAA 0 0px 2px);
-       @include border-radius(30px);
-       border: none;
-     }
+   }
+   a {
+     @include box-shadow(#999 0 2px 2px);
+     @include border-radius(50%);
+     border-top: 1px solid white;
+     width: 61px;
+     height: 61px;
+     display: block;
+   }
+   a:hover {
+     @include box-shadow(#999 0 0px 2px);
+     @include border-radius(30px);
+     border: none;
    }
    li:last-child {
      margin-right: 0px;
-   }
+   } 
  }
 }
 
@@ -243,17 +249,21 @@ p {
  .details {
    padding: 30px 0px;
    .contact {
-     display: inline-block;
      font-weight: bold;
-     width: 120px;
+     padding-right: 50px;
      @include text-shadow(#FFF 0px 1px 0px);  
    }
    span {
      padding-right: 20px;
    }
    i {
+     display: inline-block;
+     height: 19px;
+     line-height: 14px;
      margin-top: 6px;
-   }
+     vertical-align: middle;
+     width: 20px;
+    }
  }
 }
 
@@ -291,7 +301,7 @@ p {
 }
 
 #contacts {
-    background: -moz-linear-gradient(-45deg, #F5F5F5 1%, #F5F5F5 90%, #E5E5E5 100%) repeat scroll 0 0 transparent;
+    @include background-image(linear-gradient(-45deg, #F5F5F5 1%, #F5F5F5 90%, #E5E5E5 100%));
     border: 1px solid #DDD;
     @include border-bottom-right-radius(40px 5px);
     @include box-shadow(#E5EAED 1px 1px 1px);

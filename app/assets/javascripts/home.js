@@ -11,7 +11,7 @@ $(document).ready(function() {
     delay: { show: 10, hide: 200 }
   });
   
-  $('.social-network img').tooltip({
+  $('.social-network a').tooltip({
     placement: "bottom",
     delay: { show: 10, hide: 200 }
   });
