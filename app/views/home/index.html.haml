@@ -1,13 +1,19 @@
-.container
+#container
+
+  %nav
+    %a.current{:href => "#home"} Home
+    %a{:href => "#portfolio"} Portfolio
+    %a{:href => "#about-me"} About me
+    %a{:href => "#contacts"} Contacts
+
   %section#home
-    .row-fluid
+    #header
       %h1 Matteo Borgato 
-      %h2 Front-end Developer
-      %h3 Amsterdam - The Netherlands
+      %h2 Front-end Engineer
 
       %ul.social-network
         %li
-          %a{:href => "http://www.facebook.com/matteo.borgato", :target => "_blank", :class => "icons-facebook",  :title => "Facebook"}
+          %a{:href => "http://www.facebook.com/borteo", :target => "_blank", :class => "icons-facebook",  :title => "Facebook"}
         %li
           %a{ :href => "https://twitter.com/#!/borteo", :target => "_blank", :class => "icons-twitter", :title => "Twitter"}
         %li
@@ -16,88 +22,91 @@
           %a{ :href => "http://matteoborgato.com/gallery", :target => "_blank", :class => "icons-gallery", :title => "My photo gallery"}
 
   %section#portfolio
-    .row-fluid
+    .wrapper
       %h2 Portfolio
-    .row-fluid
-      .span
-        .main
-          .view.view-second
-            =image_tag("/assets/fairandsquare.png")
-            .mask
-            .content
-              %h3 Fair and Square
-              %p 
-                A new brand by Craft Resource Center for all international traders who believe in a more equal distribution of power between developed countries and developing countries.
-              =link_to "Visit", "http://fairandsquare.co.in/", :class => "info btn btn-large btn-inverse", :target => "_blank"
-      .span.pull-right
-        .main
-          .view.view-second
-            =image_tag("/assets/calcetto5.png")
-            .mask
-            .content
-              %h3 Calcetto5
-              %p 
-                One of my personal project, a social sport sharing platform that helps to organize five-a-side football matches in my city and country.
-                %br 
-                The Italian title Calcetto5 means literally 5-a-side football.
-              =link_to "Visit", "http://borteo.altervista.org/sito/web/partecipanti/welcome.php", :class => "info btn btn-large btn-inverse", :target => "_blank"
+      .row
+        .view
+          =image_tag("/assets/fairandsquare.png")
+        
+        
 
-    .row-fluid
-      .span
-        .main
-          .view.view-second
-            =image_tag("/assets/ferinox.png")
-            .mask
-            .content
-              %h3 Fer-Inox
-              %p 
-                Ironsmith based in Villanova, near Venice (Italy). This company offers wrought iron gates, fence, stairs, hanger and decorations.
-              =link_to "Visit", "http://fer-inox.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
-              
-      .span.pull-right
-        .main
-          .view.view-second
-            =image_tag("/assets/sappada.png")
-            .mask
-            .content
-              %h3 Sappada
-              %p
-                CMS and municipal Web portal of the city of Sappada (North of Italy). I've made two different style versions, one for fall/winter period and the other for spring/summer. 
-              =link_to "Visit", "http://comune.sappada.bl.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
-              
-    .row-fluid
-      .span
-        .main
-          .view.view-second
-            =image_tag("/assets/cstnapoli.png")
-            .mask
-            .content
-              %h3 CST Napoli
-              %p 
-                Centro Servizi Territoriale of Napoli (Naples). Citiziens' Web portal that contains all the most important news and information about the city of Napoli and the Campania region.
+        .view
+          =image_tag("/assets/fairandsquare.png")
+        
 
-      .span.pull-right
-        .main
-          .view.view-second
-            =image_tag("/assets/soluzionipa.png")
-            .mask
-            .content
-              %h3 Euro Servizi
-              %p
-                Company based in Padova. Graphic style simple and tidy requested by the client.
-              =link_to "Visit", "http://www.soluzionipa.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
+    /%h3 Fair and Square
+    / %p 
+    /           A new brand by Craft Resource Center for all international traders who believe in a more equal distribution of power between developed countries and developing countries.
+    /         =link_to "Visit", "http://fairandsquare.co.in/", :class => "info btn btn-large btn-inverse", :target => "_blank"
+    /   .span.pull-right
+    /     .main
+    /       .view.view-second
+    /         =image_tag("/assets/calcetto5.png")
+    /         .mask
+    /         .content
+    /           %h3 Calcetto5
+    /           %p 
+    /             One of my personal project, a social sport sharing platform that helps to organize five-a-side football matches in my city and country.
+    /             %br 
+    /             The Italian title Calcetto5 means literally 5-a-side football.
+    /           =link_to "Visit", "http://borteo.altervista.org/sito/web/partecipanti/welcome.php", :class => "info btn btn-large btn-inverse", :target => "_blank"
+
+    / .row-fluid
+    /   .span
+    /     .main
+    /       .view.view-second
+    /         =image_tag("/assets/ferinox.png")
+    /         .mask
+    /         .content
+    /           %h3 Fer-Inox
+    /           %p 
+    /             Ironsmith based in Villanova, near Venice (Italy). This company offers wrought iron gates, fence, stairs, hanger and decorations.
+    /           =link_to "Visit", "http://fer-inox.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
+              
+    /   .span.pull-right
+    /     .main
+    /       .view.view-second
+    /         =image_tag("/assets/sappada.png")
+    /         .mask
+    /         .content
+    /           %h3 Sappada
+    /           %p
+    /             CMS and municipal Web portal of the city of Sappada (North of Italy). I've made two different style versions, one for fall/winter period and the other for spring/summer. 
+    /           =link_to "Visit", "http://comune.sappada.bl.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
+              
+    / .row-fluid
+    /   .span
+    /     .main
+    /       .view.view-second
+    /         =image_tag("/assets/cstnapoli.png")
+    /         .mask
+    /         .content
+    /           %h3 CST Napoli
+    /           %p 
+    /             Centro Servizi Territoriale of Napoli (Naples). Citiziens' Web portal that contains all the most important news and information about the city of Napoli and the Campania region.
+
+    /   .span.pull-right
+    /     .main
+    /       .view.view-second
+    /         =image_tag("/assets/soluzionipa.png")
+    /         .mask
+    /         .content
+    /           %h3 Euro Servizi
+    /           %p
+    /             Company based in Padova. Graphic style simple and tidy requested by the client.
+    /           =link_to "Visit", "http://www.soluzionipa.it/", :class => "info btn btn-large btn-inverse", :target => "_blank"
       
-      .row-fluid
-        .span
-          .main
-            .view.view-second
-              =image_tag("/assets/portfolio.png")
-              .mask
-              .content
-                %h3 Last portfolio
-                %p 
-                  My old portfolio (version 2)
-                =link_to "Visit", "http://borteo.altervista.org/sito/web/cms/", :class => "info btn btn-large btn-inverse", :target => "_blank"
+    /   .row-fluid
+    /     .span
+    /       .main
+    /         .view.view-second
+    /           =image_tag("/assets/portfolio.png")
+    /           .mask
+    /           .content
+    /             %h3 Last portfolio
+    /             %p 
+    /               My old portfolio (version 2)
+    /             =link_to "Visit", "http://borteo.altervista.org/sito/web/cms/", :class => "info btn btn-large btn-inverse", :target => "_blank"
 
   %section#about-me
     .row-fluid
@@ -152,9 +161,6 @@
         %p
           %span#skills-detail.btn show more
 
-          
-
-        
 
   %section#contacts
     .row-fluid
@@ -177,13 +183,6 @@
 
   %section#share
     .row-fluid
-      .span2
-        %a.twitter-share-button{:href => "https://twitter.com/borteo", "text" => "Matteo Borgato, Front-end Web Developer Portfolio", "via" => "borteo", "hashtags" => "Front-end, Web Developer", "data-related" => "borteo",  "data-lang" => "en", "data-size" => "large", "data-count" => "none"}
-          Tweet
-      .span3
-        .g-plusone{"data-annotation" => "inline"}
-      .span4
-        =facebook_like        
-        
+      
 -# Javascript at the bottom for fast page loading
 = javascript_include_tag "application"

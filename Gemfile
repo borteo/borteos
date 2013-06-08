@@ -4,7 +4,6 @@ gem 'rails', '3.1.3'
 
 group :assets do
   gem 'sass-rails'
-  gem 'coffee-rails'
   gem 'uglifier'
   gem 'compass-rails'
   gem 'compass-colors'
@@ -13,8 +12,11 @@ end
 
 gem 'haml-rails' # Optional - to generate haml
 gem 'jquery-rails'
-gem 'bootstrap-sass', '~> 2.0.1'
-gem 'twitter'
+gem 'html5-rails'
+
+gem 'bootstrap-sass'
+
+gem 'thin'
 
 group :test do
   # Pretty printed test output

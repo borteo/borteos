@@ -1,3 +1,3 @@
 == Borteo's Portfolio
 
-My Web Portfolio
+My Web portfolio

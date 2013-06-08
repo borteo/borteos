@@ -6,6 +6,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
-//= require jquery.scrollTo
+//= require h5bp
+//= require jquery.easing.min
+//= require waypoints.min
+//= require fixedScroll
+//= require bootstrap-tooltip
+//= require bootstrap-popover
 //= require home
