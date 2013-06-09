@@ -19,15 +19,6 @@ $icons-layout: diagonal;
   font-size: 16px;
 }
 
-.josefin {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 26px;
-  line-height: 30px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-align: justify;
-}
-
 body {
   background: #F4F4F4 url('/assets/bg.jpg') fixed;
 }
@@ -64,110 +55,16 @@ h2 {
   padding-bottom: 15px;
 }
 
-p {
-  font-size: 21px;
-  line-height: 32px;
-  @include text-shadow(#FFF 0px 1px 0);
-}
-
-.container-small {
-  width: 410px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#home {
-  text-align: center;
-  position: relative;
-  height: 800px;
-  z-index: 1;
-  background-image: url("/assets/living.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-  #header {
-    background: url('/assets/trans70.png');
-    height: 290px;
-    width: 100%;
-    position: fixed;
-    top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  }
-
-  #home h2 {
-    color: #C25552;
-    display: block;
-    letter-spacing: -2px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    margin-bottom: 18px;
-  }
-  #home .social-network {
-    margin-top: 0;
-    float:left;
-    list-style:none;
-    text-align:center;
-    position:relative;
-    left:49%;
-  }
-    .social-network li {
-      float:left;
-      list-style:none;
-      margin:0;
-      padding:0;
-      margin-right: 20px;
-      position:relative;
-      right:60%;
-    }
-    .social-network li a {
-      @include box-shadow(#999 0 2px 2px);
-      @include border-radius(50%);
-      border-top: 1px solid white;
-      width: 61px;
-      height: 61px;
-      display: block;
-    }
-    .social-network li a:hover {
-      @include box-shadow(#999 0 0px 2px);
-      @include border-radius(30px);
-      border: none;
-    }
-    .social-network li:last-child {
-      margin-right: 0px;
-    }
-
-#portfolio {
-  border-top: 1px solid #EEE;
-  @include box-shadow(#666 0 2px 12px);
-  padding-bottom: 80px;
-  overflow: hidden;
-  background: url("/assets/bg-portfolio.png");
-  padding: 0 30px 30px;
-  position: relative;
-  z-index: 10;
-  h2 {
-    margin-bottom: 20px;
-  }
-  h2:first-letter {
-    background: none repeat scroll 0 0 #DB716F;
-    font-size: 2.2em;
-    letter-spacing: 4px;
-    @include text-shadow((#F4A2A1 2px 2px 0px), (#F4A2A1 3px 3px 0px));
-  }
-  .pull-right {
-    float: right;
-  }
-}
 
 #about-me {
   padding: 30px;
   position: relative;
   z-index: 9;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('/assets/odience.jpg');
+  background-color: white;
   h2 {
     padding-bottom: 25px;
   }
@@ -180,53 +77,64 @@ p {
   h3 {
     font-family: 'Mr De Haviland', cursive;
     font-weight: 200;
-    font-size: 35px;
-    color: #AEAEAE;
-    @include text-shadow(#fff 1px 1px 0px);
+    font-size: 3.8em;
+    color: rgb(194, 85, 82);
+    @include text-shadow(#fff 0 0 5px);
+    padding-top: 30px;
+    padding-bottom: 12px;
   }
-  
-  .container {
-    padding-bottom: 60px;
-    border-bottom: 2px solid #CCC;
-  }
- .picture {
-   margin-right: 30px;
-   margin-top: 10px;
-   border: 1px solid #DDD;
-   @include box-shadow(#999 0px 2px 4px);
-   @include border-radius(50%);
-   @include transition(all 0.2s ease-in-out);
- }
- .picture:hover {
-   @include transform(rotate(-5deg));
-   @include transition-duration(0.5s);
- }
- h3 {
-   font-size: 50px;
-   padding-top: 30px;
-   padding-bottom: 12px;
- }
- #skills {
-   width: 65%;
-   margin: 0 auto;
-   margin-top: 15px;
-   text-align: center;
-
-   .label {
-     font-size: 16px;
-   }
- }
 }
+  #curriculum {
+    background: rgba(255, 255, 255, 0.7);
+    border: 5px dotted white;
+    color: #3A87AD;
+    float: right;
+    font-family: 'Six Caps',sans-serif;
+    font-size: 2.8em;
+    line-height: 45px;
+    padding: 8px 4px;
+    text-align: center;
+    width: 120px;
+  }
+  #curriculum:hover {
+    text-decoration:  none;
+    background: rgba(255, 255, 255, 1);
+  }
+  #me {
+    margin: 10px 30px 0;
+    background: url("/assets/me.png") center center no-repeat;
+    width: 300px;
+    height: 287px;
+    display: inline-block;
+    @include box-shadow(#333 0px 5px 10px, rgba(0, 0, 0, 0.2) 0 0 2px 4px inset);
+    border-top: rgba(255, 255, 255, 0.8) 1px solid;
+    @include border-radius(50%);
+    @include transition(all 0.2s ease-in-out);
+ }
+  #me:hover {
+    @include transform(rotate(-15deg));
+    @include transition-duration(0.2s);
+  }
+  #skills {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+
+    .label {
+      font-size: 16px;
+    }
+  }
+  #skills .tags {
+    @include transition(all 0.2s);
+    height: 60px;
+  }
 
 #contacts {
   padding: 100px 30px 100px 30px;
   position: relative;
   z-index: 10;
-  background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url('/assets/odience.jpg');
-    background-color: white;
+  background: url('/assets/trans70.png');
   h2:first-letter {
     background: #F7F57E;
     font-size: 2.2em;
@@ -257,25 +165,15 @@ p {
  }
 }
 
-.box {
-  width: 440px;
-  margin-right: 15px;
-  float: left;
-}
-.box:last-child {
- margin-right: 0px;
-}
-
 
 footer {
  text-align: center;
- background: #23536B;
- color: white;
+ color: #888;
  padding: 20px 0px;
  @include text-shadow(#FFF 0px 0px 5px);
  a, a:hover {
    text-decoration: underline;
-   color: #EFEFEF;
+   color: #999;
  }
 }
 
@@ -322,10 +220,10 @@ footer {
  
 /* The nav is fixed on the right side and we center it by translating it 50%
 (we don't know it's height so we can't use the negative margin trick) */
-nav {
+#page-nav {
   position: fixed;
   z-index: 9999;
-  right: 5%;
+  right: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -333,7 +231,7 @@ nav {
   transform: translateY(-50%);
 }
  
-  nav a {
+  #page-nav a {
     display: block;
     position: relative;
     color: transparent;
@@ -341,7 +239,7 @@ nav {
     text-align: right;
   }
 
-  nav a:after {
+  #page-nav a:after {
     content: '';
     position: absolute;
     width: 14px;
@@ -350,11 +248,11 @@ nav {
     border: 4px solid rgb(194, 85, 82);
   }
    
-  nav a:hover:after {
+  #page-nav a:hover:after {
     background: rgba(194, 85, 82, 0.6);
   }
    
-  nav a.current:after {
+  #page-nav a.current:after {
     background: rgb(194, 85, 82);
   }
 
@@ -363,49 +261,241 @@ nav {
 }
 
 .wrapper {
-  max-width: 980px;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: $wrapper-width;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-// Porfolio
-.view img {
-  display: block;
-  position: relative;
-}
 
-.view h3 {
-  text-transform: uppercase;
-  color: #fff;
+#home {
   text-align: center;
   position: relative;
-  font-size: 18px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  margin: 20px 0 0 0;
+  height: 800px;
+  z-index: 1;
+  background-image: url("/assets/living.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+  #header {
+    background: url('/assets/trans70.png');
+    height: 290px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
-.view {
-  background: #FFFFFF;
-  border: 10px solid #FFFFFF;
-  @include box-shadow(#777 0px 1px 2px);
-  cursor: default;
-  float: left;
-  margin-bottom: 15px;
+  #home h2 {
+    color: #C25552;
+    display: block;
+    letter-spacing: -2px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+  }
+  #home .social-network {
+    margin-top: 0;
+    float:left;
+    list-style:none;
+    text-align:center;
+    position:relative;
+    left:49%;
+  }
+    #home .social-network li {
+      float:left;
+      list-style:none;
+      margin-right: 20px;
+      position:relative;
+      right:60%;
+    }
+    #home .social-network li:last-child {
+      margin-right: 0px;
+    }
+    #home .social-network a {
+      @include box-shadow(#999 0 2px 2px);
+      @include border-radius(50%);
+      border-top: 1px solid white;
+      width: 61px;
+      height: 61px;
+      display: block;
+    }
+    #home .social-network a:hover {
+      @include box-shadow(#999 0 0px 2px);
+      @include border-radius(30px);
+      border: none;
+    }
+
+#portfolio {
+  border-top: 1px solid #FFF;
+  @include box-shadow(#666 0 2px 12px);
+  padding-bottom: 80px;
   overflow: hidden;
+  background: url("/assets/bg-portfolio.png");
+  padding: 0 30px 30px;
   position: relative;
-  text-align: center;
-  height: 340px;
-  width: 480px;
+  z-index: 10;
+  h2 {
+    margin-bottom: 20px;
+  }
+  h2:first-letter {
+    background: none repeat scroll 0 0 #DB716F;
+    font-size: 2.2em;
+    letter-spacing: 4px;
+    @include text-shadow((#F4A2A1 2px 2px 0px), (#F4A2A1 3px 3px 0px));
+  }
 }
 
-.view p {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 15px;
-  position: relative;
-  color: #fff;
-  padding-top: 15px;
-  line-height: 20px;
-  text-align: center;
+  #sites-grid {
+    list-style: none;
+    margin: 0 auto;
+    max-width: $wrapper-width - 100;
+    padding: 0;
+  }
+
+/* Micro clearfix hack by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+  #sites-grid:before, 
+  #sites-grid:after {
+    content: " ";
+    display: table;
+  }
+  #sites-grid:after {
+    clear: both;
+  }
+/* end clearfix hack */
+
+  #sites-grid li {
+    float: left;
+    width: 420px;
+    height: 320px;
+    padding: 10px 20px 50px 20px;
+    background: #fff;
+    position: relative;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
+
+  #sites-grid li:nth-child(even) {
+    float: right;
+  }
+
+  #sites-grid li:before, 
+  #sites-grid li:after {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    bottom: 15px;
+    left:  10px;
+    width: 50%;
+    height: 20%;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+
+  #sites-grid li:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  #sites-grid li a {
+    display: block;
+  }
+
+  #sites-grid h3 {
+    color: #9a9b92;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+
+  #sites-grid nav {
+    margin-top: 12px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  #sites-grid nav span.bb-current {
+    background: #ECB700;
+  }
+  #sites-grid nav span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    margin: 3px;
+    cursor: pointer;
+    box-shadow: 
+      inset 0 1px 1px rgba(0,0,0,0.2), 
+      0 2px 1px rgba(255,255,255,0.9);
+  }
+
+  .bb-bookblock {
+    width: 100%;
+    height: 92%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    -webkit-perspective: 1300px;
+    -moz-perspective: 1300px;
+    perspective: 1300px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .bb-bookblock p {
+    padding-top: 2em;
+    font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.4em;
+    color: #FF5E99;
+    line-height: 1.2em;
+  }
+
+  .bb-item {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .no-js .bb-item {
+    display: block;
+    position: relative;
+  }
+
+
+.description {
+  display: inline-block;
+  padding-top: 20px;
+  max-width: 700px;
+}
+.description p {
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: .6em;
 }

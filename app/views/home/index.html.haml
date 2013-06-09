@@ -1,6 +1,6 @@
 #container
 
-  %nav
+  %nav#page-nav
     %a.current{:href => "#home"} Home
     %a{:href => "#portfolio"} Portfolio
     %a{:href => "#about-me"} About me
@@ -24,14 +24,117 @@
   %section#portfolio
     .wrapper
       %h2 Portfolio
-      .row
-        .view
-          =image_tag("/assets/fairandsquare.png")
-        
-        
 
-        .view
-          =image_tag("/assets/fairandsquare.png")
+      
+      %ul#sites-grid
+        
+        %li
+          %h3
+            Pastbook.com
+          .bb-bookblock
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614568-Lands-Devil-Spirit-Jinx"}
+                %img{:alt => "image01", :src => "/assets/sappada.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+            .bb-item 
+              %p 
+                A new brand by Craft Resource Center for all international traders who believe in a more equal distribution of power between developed countries and developing countries.
+          %nav
+            %span.bb-current
+            %span
+            %span
+
+        %li
+          %h3
+            Oele.com
+          .bb-bookblock
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614568-Lands-Devil-Spirit-Jinx"}
+                %img{:alt => "image01", :src => "/assets/sappada.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+          %nav
+            %span.bb-current
+            %span
+
+        %li
+          %h3
+            Fitmo
+          .bb-bookblock
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614568-Lands-Devil-Spirit-Jinx"}
+                %img{:alt => "image01", :src => "/assets/sappada.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+          %nav
+            %span.bb-current
+            %span
+
+        %li
+          %h3
+            Fair and Square
+          .bb-bookblock
+            .bb-item
+              %img{:alt => "image01", :src => "/assets/fairandsquare.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+            .bb-item 
+              %p 
+                A new brand by Craft Resource Center for all international traders who believe in a more equal distribution of power between developed countries and developing countries.
+          %nav
+            %span.bb-current
+            %span
+            %span
+
+        %li
+          %h3
+            Ferinox
+          .bb-bookblock
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614568-Lands-Devil-Spirit-Jinx"}
+                %img{:alt => "image01", :src => "/assets/sappada.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+          %nav
+            %span.bb-current
+            %span
+
+        %li
+          %h3
+            Calcetto5
+          .bb-bookblock
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614568-Lands-Devil-Spirit-Jinx"}
+                %img{:alt => "image01", :src => "/assets/sappada.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+          %nav
+            %span.bb-current
+            %span
+
+        %li
+          %h3
+            Sappada
+          .bb-bookblock
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614568-Lands-Devil-Spirit-Jinx"}
+                %img{:alt => "image01", :src => "/assets/sappada.png"}/
+            .bb-item
+              %a{:href => "http://dribbble.com/shots/614264-Lands-Antspearer"}
+                %img{:alt => "image02", :src => "/assets/calcetto5.png"}/
+          %nav
+            %span.bb-current
+            %span
+
+      /   .view
+      /     =image_tag("/assets/fairandsquare.png")
         
 
     /%h3 Fair and Square
@@ -109,57 +212,56 @@
     /             =link_to "Visit", "http://borteo.altervista.org/sito/web/cms/", :class => "info btn btn-large btn-inverse", :target => "_blank"
 
   %section#about-me
-    .row-fluid
+    .wrapper
+      =link_to "Download Curriculum", 'http://dl.dropbox.com/u/1089758/matteoborgato_cv.pdf', :id => "curriculum", :title => "Download my Curriculum Vitae", :_target => "blank"
       %h2 About me
-    .row-fluid
-      .span
-        =image_tag "me.png", :class => "picture", :title => "Hire me!", "data-content" => "I am looking for a job"
-      .span8
-        %p.josefin
-          Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
-        %p.josefin
-          I am a front-end developer, with more than 4 years under the belt. Currently I live in the beautiful Amsterdam - The Netherlands.
-        %p.josefin
-          I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
-        %p
-          =link_to "Download my Curriculum Vitae", 'http://dl.dropbox.com/u/1089758/matteoborgato_cv.pdf', :class => "btn btn-info"
+      .row
+        #me{:title => "Hire me!", "data-content" => "I am looking for a job"}
+        .description.josefin
+          %p
+            Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
+          %p
+            I am a front-end developer, with more than 4 years under the belt. Currently I live in the beautiful Amsterdam - The Netherlands.
+          %p
+            I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
+            
 
-    .row-fluid
-      #skills
-        %h3
-          Skills
-        %p
-          %span.label.label-info.front CSS
-          %span.label.label-info.front HTML5
-          %span.label.label-info.front JavaScript
-          %span.label.label-info.front Jquery
-          %span.label.label-info.front Mootools
-          %span.label.label-info.front.hide CoffeeScript
-          %span.label.label-info.front.hide Mustache
-          
-          %span.label.back Ruby on Rails
-          %span.label.back PHP
-          %span.label.hide.back Python
-          
-          %span.label.hide.label-important E-commerce
-          %span.label.hide.label-important Magento
-          %span.label.hide.label-important SEO
-          %span.label.hide.label-warning RSpec
-          %span.label.hide.label-warning Capybara
-          %span.label.label-success.db MySQL
-          %span.label.label-success.db Oracle
-          %span.label.label-success.db PostgreSQL
-          %span.label.label-success.db MongoDB
-          %span.label.label-black.apps Photoshop
-          %span.label.label-black.apps Illustrator
-          %span.label.label-black.apps.hide CorelDraw
-          %span.label.label-black.apps.hide Inkscape
-          %span.label.hide Mac OS
-          %span.label.hide GNU/Linux
-          %span.label.hide Windows
+      .row
+        #skills
+          %h3
+            Skills
+          %p.tags
+            %span.label.label-info.front CSS
+            %span.label.label-info.front HTML5
+            %span.label.label-info.front JavaScript
+            %span.label.label-info.front Jquery
+            %span.label.label-info.front Mootools
+            %span.label.label-info.front.hide CoffeeScript
+            %span.label.label-info.front.hide Mustache
+            
+            %span.label.back Ruby on Rails
+            %span.label.back PHP
+            %span.label.hide.back Python
+            
+            %span.label.hide.label-important E-commerce
+            %span.label.hide.label-important Magento
+            %span.label.hide.label-important SEO
+            %span.label.hide.label-warning RSpec
+            %span.label.hide.label-warning Capybara
+            %span.label.label-success.db MySQL
+            %span.label.label-success.db Oracle
+            %span.label.label-success.db PostgreSQL
+            %span.label.label-success.db MongoDB
+            %span.label.label-black.apps Photoshop
+            %span.label.label-black.apps Illustrator
+            %span.label.label-black.apps.hide CorelDraw
+            %span.label.label-black.apps.hide Inkscape
+            %span.label.hide Mac OS
+            %span.label.hide GNU/Linux
+            %span.label.hide Windows
 
-        %p
-          %span#skills-detail.btn show more
+          %p
+            %span#skills-detail.btn show more
 
 
   %section#contacts

@@ -12,4 +12,6 @@
 //= require fixedScroll
 //= require bootstrap-tooltip
 //= require bootstrap-popover
+//= require jquerypp.custom
+//= require jquery.bookblock.min
 //= require home
