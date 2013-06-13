@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.11'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'heroku'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -14,10 +14,9 @@ group :assets do
   gem 'compass-rails'
   gem 'compass-colors'
   gem 'compass-h5bp'
-  # gem 'susy'
 end
 
-gem 'haml-rails'
+gem "haml-rails", ">= 0.4"
 gem 'jquery-rails'
 gem 'html5-rails'  # depends on compass-h5bp
 

@@ -12,9 +12,3 @@
 //= require fixedScroll
 //= require grid
 //= require home
-
-
-
-
-//= require jquerypp.custom
-//= require jquery.bookblock.min
