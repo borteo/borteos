@@ -1,0 +1,28 @@
+%nav#page-nav
+  %a.current{:href => "#home"} Home
+  %a{:href => "#portfolio"} Portfolio
+  %a{:href => "#about-me"} About me
+  %a{:href => "#contacts"} Contacts
+
+%section#home
+  %header
+    %h1 Matteo Borgato 
+    %h2 Front-end Engineer
+
+    %ul.social-network
+      %li
+        %a{:href => "http://www.facebook.com/borteo", :target => "_blank", :class => "icons-facebook tooltip"}
+          %span 
+            Facebook
+      %li.tooltip
+        %a{ :href => "https://twitter.com/#!/borteo", :target => "_blank", :class => "icons-twitter tooltip"}
+          %span 
+            Twitter
+      %li.tooltip
+        %a{ :href => "http://nl.linkedin.com/pub/matteo-borgato/24/920/97a/en", :target => "_blank", :class => "icons-linkedin tooltip"}
+          %span
+            LinkedIn
+      %li.tooltip
+        %a{ :href => "http://matteoborgato.com/gallery", :target => "_blank", :class => "icons-gallery tooltip"}
+          %span
+            photo gallery

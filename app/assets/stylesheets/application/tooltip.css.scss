@@ -1,0 +1,23 @@
+a.tooltip span { 
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  width: 120px;
+  line-height: 25px;
+  z-index: 10;
+  background-color: #C25552;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Cantata One', serif;
+  font-weight: 100;
+}
+a.tooltip:hover span {
+  display: inline;
+  font-family: "Helvetica Neue", sans-serif;
+  opacity: 1.0;
+  top: 80px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}

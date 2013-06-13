@@ -1,0 +1,17 @@
+!!! 5
+- html_tag :class => "no-js", :lang => "en" do
+  = render "head"
+
+  %body
+    = render "chromeframe"
+
+    #container
+      = render "header"
+
+      #main
+        = render "portfolio"
+        = yield
+        = render "footer"
+
+    -# Javascript at the bottom for fast page loading
+    = render "javascripts"

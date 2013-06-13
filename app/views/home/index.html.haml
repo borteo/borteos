@@ -1,0 +1,81 @@
+%section#about-me
+  .wrapper
+    =link_to "Download Curriculum", 'http://dl.dropbox.com/u/1089758/matteoborgato_cv.pdf', :id => "curriculum", :title => "Download my Curriculum Vitae", :_target => "blank"
+    %h2 About me
+    .row
+      #me{:title => "Hire me!", "data-content" => "I am looking for a job"}
+      .description.josefin
+        %p
+          Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
+        %p
+          I am a front-end developer, with more than #{ Date.today.year - 2007 } years under the belt. Currently I live in the beautiful Amsterdam - The Netherlands.
+        %p
+          I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
+          
+
+    .row
+      #skills
+        %h3
+          Skills
+        %p.tags
+          %span.badge.frontend CSS
+          %span.badge.frontend HTML5
+          %span.badge.frontend JavaScript
+          %span.badge.frontend Jquery
+          %span.badge.frontend.hide Mootools
+          %span.badge.frontend.hide CoffeeScript
+          %span.badge.frontend.hide Mustache
+          
+          %span.badge.backend Ruby on Rails
+          %span.badge.backend PHP
+          %span.badge.backend.hide Python
+          
+          %span.badge.hide.ecommerce E-commerce
+          %span.badge.hide.ecommerce Magento
+          %span.badge.hide.ecommerce SEO
+
+          %span.badge.hide.test RSpec
+          %span.badge.hide.test Capybara
+
+          %span.badge.db MySQL
+          %span.badge.db Oracle
+          %span.badge.db PostgreSQL
+          %span.badge.db MongoDB
+
+          %span.badge.subversion Git
+          %span.badge.subversion SVN
+
+          %span.badge.apps Photoshop
+          %span.badge.apps Illustrator
+          %span.badge.apps.hide CorelDraw
+          %span.badge.apps.hide Inkscape
+
+          %span.badge.os.hide Mac OS
+          %span.badge.os.hide GNU/Linux
+          %span.badge.os.hide Windows
+
+        %p
+          %span#skills-more show more
+
+
+%section#contacts
+  .row-fluid
+    %h2 Contacts
+  .row-fluid.details
+    %p
+      %span.contact Mobile
+      %i.icons-it
+      +39 349 4246616 
+      %i.icons-nl
+      +31 621 360018
+    %p
+      %span.contact E-mail
+      %i.icons-envelope
+      borgato.matteo (at) gmail dot com
+    %p
+      %span.contact Skype
+      %i.icons-skype
+      matteo_borgato
+
+%section#share
+  .row-fluid
