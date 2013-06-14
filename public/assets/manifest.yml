@@ -7,12 +7,14 @@ bg.jpg: bg-91e000b8e19946acdcc29fc44dbcb9f3.jpg
 bg/index.jpg: bg-91e000b8e19946acdcc29fc44dbcb9f3.jpg
 black.png: black-a87aa65c3e3105ec2d09e2eb5cccce66.png
 black/index.png: black-a87aa65c3e3105ec2d09e2eb5cccce66.png
-icons-s209d71cc0e.png: icons-s209d71cc0e-8aa300e47cc77fef3c540026b62a820f.png
-icons-s209d71cc0e/index.png: icons-s209d71cc0e-8aa300e47cc77fef3c540026b62a820f.png
+icons-sc9cc1f0db0.png: icons-sc9cc1f0db0-1efbdf7f9a822ae4443977ada20dda70.png
+icons-sc9cc1f0db0/index.png: icons-sc9cc1f0db0-1efbdf7f9a822ae4443977ada20dda70.png
 icons/envelope.png: icons/envelope-84d1d7a7c134c0686010f8b87f815e05.png
 icons/envelope/index.png: icons/envelope-84d1d7a7c134c0686010f8b87f815e05.png
 icons/facebook.png: icons/facebook-50568af6dc35aa18a3c9f94e26804024.png
 icons/facebook/index.png: icons/facebook-50568af6dc35aa18a3c9f94e26804024.png
+icons/flickr.png: icons/flickr-31d4b6098de4d655df8a84afdb12d13b.png
+icons/flickr/index.png: icons/flickr-31d4b6098de4d655df8a84afdb12d13b.png
 icons/gallery.png: icons/gallery-9c6c2bf5d23caee1cbc130298dbdcf19.png
 icons/gallery/index.png: icons/gallery-9c6c2bf5d23caee1cbc130298dbdcf19.png
 icons/it.png: icons/it-c8a3ad45e9fa2ed7d87cbd0d76fde086.png
@@ -125,7 +127,7 @@ works/sappada.jpg: works/sappada-6b0367fa2ae3a9a9174dea15ba89ab8b.jpg
 works/sappada/index.jpg: works/sappada-6b0367fa2ae3a9a9174dea15ba89ab8b.jpg
 application.js: application-f18a319d88881b91278bf7553c41c437.js
 application/index.js: application-f18a319d88881b91278bf7553c41c437.js
-application.css: application-c020943dc1d9d639403309b8abb10bfd.css
-application/index.css: application-c020943dc1d9d639403309b8abb10bfd.css
+application.css: application-788be08705df9b91fe111276c87c9a0e.css
+application/index.css: application-788be08705df9b91fe111276c87c9a0e.css
 jquery.min.map: jquery.min-1c0cf7b6a3425fbd9a3bfccab0a99a4e.map
 jquery/index.min.map: jquery.min-1c0cf7b6a3425fbd9a3bfccab0a99a4e.map
