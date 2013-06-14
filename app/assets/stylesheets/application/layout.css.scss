@@ -130,23 +130,41 @@ h2 {
   #skills > .tags {
     @include transition(all 0.2s);
     margin: 0;
-    height: 4.2em;
+    padding-bottom: .5em;
+    z-index: 10;
   }
 
   #skills-more {
     cursor: pointer;
+    z-index: 100;
   }
   #skills-more:hover {
     background: url('/assets/trans70.png');
     padding: 10px 15px;
   }
 
+#contacts:before,
+#contacts:after {
+  background: url("/assets/stripe.png") repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+#contacts:before {
+  top: 0;
+}
+#contacts:after {
+  bottom: 0;
+}
 
 #contacts {
   padding: 120px 30px 100px 30px;
   position: relative;
   z-index: 10;
-  background: url('/assets/trans70.png');
+  background: white url("/assets/bg-contacts.png");
   h2:first-letter {
     background: #F7F57E;
     font-size: 2.2em;
@@ -157,9 +175,12 @@ h2 {
     padding: 30px 0px;
     font-size: 1.5em;
     .contact {
-      font-weight: bold;
-      padding-right: 50px;
-      @include text-shadow(#FFF 0px 1px 0px);  
+      display: inline-block;
+      font-family: monospace;
+      font-size: 1.8em;
+      width: 15%;
+      color: #CCC;
+      @include text-shadow(#999 0px 2px 0px);  
     }
     span {
       padding-right: 20px;
@@ -179,55 +200,6 @@ h2 {
 }
 
 
-footer {
- text-align: center;
- color: #888;
- padding: 20px 0px;
- @include text-shadow(#FFF 0px 0px 5px);
- a, a:hover {
-   text-decoration: underline;
-   color: #999;
- }
-}
-
-
-
-// Media 
-// Landscape phones and down
-@media (max-width: 480px) {
-  h1 {
-    font-size: 100px;
-    padding-bottom: 30px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .view {
-    height: 180px;
-    width: 260px;
-  }
-
-  #contacts .details .contact, #contacts .details span {
-    display: block;
-  }
-}
-
-/*
--// Landscape phone to portrait tablet
--@media (max-width: 768px) {
- 
--}
-
--// Portrait tablet to landscape and desktop
--@media (min-width: 768px) and (max-width: 980px) {
- 
--}
-
--// Large desktop
--@media (min-width: 1200px) {
- 
--}
--*/
 
 // NEW CSS --------------------------------
  
@@ -384,4 +356,25 @@ footer {
   text-align: justify;
   margin-bottom: .6em;
   color: #444;
+}
+
+.plane {
+  background: url("/assets/plane.png") no-repeat transparent;
+    height: 385px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 20px 0px;
+  @include text-shadow(#FFF 0px 0px 5px);
+  a, a:hover {
+    text-decoration: underline;
+     color: #999;
+  }
 }
