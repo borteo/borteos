@@ -329,7 +329,7 @@ h2 {
   @include box-shadow(#666 0 2px 12px);
   padding-bottom: 80px;
   overflow: hidden;
-  background: url("/assets/bg-portfolio.png");
+  background: url("/assets/bg-portfolio.png") #CCC;
   padding: 0 30px 30px;
   position: relative;
   z-index: 10;
