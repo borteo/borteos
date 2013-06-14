@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Borteos::Application.config.secret_token = '5e555a77c7eef62f8d7ee811102a8e9171d63fca77072dbdf2702ae9bbdd5db4fc4a932f10f1d720790920e9d3c69f325c93875dedd7cbeafaddc3f42fbe995d'
+Portfolio::Application.config.secret_token = 'bc913c24ce071b127f5e9b58cfd40aa08598caf4bb85c81999d8f32661b215a954f7bb6c1e965bee4a6943b9f459d029a0dae4ac950c7507f2f3e8990956962a'

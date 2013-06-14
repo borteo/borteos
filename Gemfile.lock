@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (3.2.11)
       actionpack (= 3.2.11)
@@ -47,7 +47,7 @@ GEM
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
     erubis (2.7.0)
-    excon (0.22.1)
+    excon (0.23.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     fssm (0.2.10)
@@ -64,8 +64,8 @@ GEM
       netrc (~> 0.7.7)
       rest-client (~> 1.6.1)
       rubyzip
-    heroku-api (0.3.11)
-      excon (~> 0.22.1)
+    heroku-api (0.3.12)
+      excon (~> 0.23.0)
     hike (1.2.3)
     html5-rails (0.1.0)
       jquery-rails (>= 2.0)

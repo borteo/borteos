@@ -1,4 +1,4 @@
-Borteos::Application.routes.draw do
+Portfolio::Application.routes.draw do
 
   root :to => "home#index"
 
