@@ -127,7 +127,7 @@ works/sappada.jpg: works/sappada-6b0367fa2ae3a9a9174dea15ba89ab8b.jpg
 works/sappada/index.jpg: works/sappada-6b0367fa2ae3a9a9174dea15ba89ab8b.jpg
 application.js: application-f18a319d88881b91278bf7553c41c437.js
 application/index.js: application-f18a319d88881b91278bf7553c41c437.js
-application.css: application-788be08705df9b91fe111276c87c9a0e.css
-application/index.css: application-788be08705df9b91fe111276c87c9a0e.css
+application.css: application-e47aaf28899323e77a48473633da58df.css
+application/index.css: application-e47aaf28899323e77a48473633da58df.css
 jquery.min.map: jquery.min-1c0cf7b6a3425fbd9a3bfccab0a99a4e.map
 jquery/index.min.map: jquery.min-1c0cf7b6a3425fbd9a3bfccab0a99a4e.map

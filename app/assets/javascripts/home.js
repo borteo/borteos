@@ -33,7 +33,8 @@ $(function() {
 
   // Share it
   var addthis_config = {
-    "data_track_addressbar": true
+    "data_track_addressbar": true,
   };
+
 
 });
