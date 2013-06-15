@@ -9,7 +9,8 @@ $(function() {
   var height     = parseInt( tagsView.height() );
 
   $('#skills-more').on('click', function() {
-    if ( $(this).hasClass('hide-skills') ) {
+    var icon = $(this).find('i');
+    if ( icon.hasClass('icons-minus') ) {
       skillsView.find('.shown')
         .fadeOut('slow', function() {
           tagsView.height( height );
@@ -17,8 +18,8 @@ $(function() {
         .removeClass('shown')
         .addClass('hide');
 
-      $(this).text("show more")
-        .removeClass('hide-skills');
+      icon.addClass('icons-plus')
+        .removeClass('icons-minus');
     } else {
       tagsView.height( height + 60 );
       skillsView.find('.hide')
@@ -26,8 +27,8 @@ $(function() {
         .removeClass('hide')
         .addClass('shown');
 
-      $(this).text("hide")
-        .addClass('hide-skills');
+      icon.addClass('icons-minus')
+        .removeClass('icons-plus');
     }
   });
 

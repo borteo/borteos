@@ -15,8 +15,12 @@
 
     .row
       #skills
+
         %h3
           Skills
+          %span#skills-more 
+            %i.icons-plus
+
         %p.tags
           %span.badge.frontend CSS
           %span.badge.frontend HTML5
@@ -38,7 +42,7 @@
           %span.badge.hide.test Capybara
 
           %span.badge.db MySQL
-          %span.badge.db Oracle
+          %span.badge.db.hide Oracle
           %span.badge.db PostgreSQL
           %span.badge.db MongoDB
 
@@ -53,9 +57,7 @@
           %span.badge.os.hide Mac OS
           %span.badge.os.hide GNU/Linux
           %span.badge.os.hide Windows
-
-        %p
-          %span#skills-more show more
+          
 
 
 %section#contacts
@@ -64,9 +66,9 @@
   .row.details
     %p
       %span.contact Mobile
-      %i.icons-it
+      %i.icons-celIT
       +39 349 4246616 
-      %i.icons-nl
+      %i.icons-celNL
       +31 621 360018
     %p
       %span.contact E-mail

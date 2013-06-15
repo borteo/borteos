@@ -22,17 +22,6 @@ body {
   overflow: hidden;
 }
 
-.tooltip-inner {
-  background-color: #C25552;
-  border-radius: 0;
-  color: white;
-  font-size: 13px;
-  font-family: "Helvetica Neue", sans-serif;
-}
-  .tooltip.bottom .tooltip-arrow {
-    border:none;
-  }
-
 h1, 
 h2 {
   margin: 0;
@@ -135,14 +124,22 @@ h2 {
     z-index: 10;
   }
 
-  #skills-more {
+  #skills-more i {
+    border: 1px solid #DDD;
+    background-color: #EEE;
+    @include box-shadow(#777 0 0 5px );
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    @include border-radius(10%);
     cursor: pointer;
-    z-index: 100;
+    @include transition(ease-out 0.4s);
   }
-  #skills-more:hover {
-    background: url('/assets/trans70.png');
-    padding: 10px 15px;
+
+  #skills-more i:hover {
+    @include rotateZ( 360deg );
   }
+
 
 #contacts:before,
 #contacts:after {
@@ -225,12 +222,24 @@ h2 {
     text-align: right;
   }
 
+  #page-nav a span {
+    color: rgb(194, 85, 82);
+    position: relative;
+    right: -120px;
+    opacity: 0;
+    @include transition(all 0.2s ease-out);
+  }
+  #page-nav a:hover span {
+    right: 5px;
+    opacity: 1;
+  }
+
   #page-nav a:after {
     content: '';
     position: absolute;
     width: 14px;
     height: 14px;
-    border-radius: 50%;
+    @include border-radius(50%);
     border: 4px solid rgb(194, 85, 82);
   }
    
