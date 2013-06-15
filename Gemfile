@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 ruby '1.9.3'
 gem 'rails', '3.2.11'
@@ -18,9 +18,9 @@ end
 
 gem "haml-rails", ">= 0.4"
 gem 'jquery-rails'
-gem 'html5-rails'  # depends on compass-h5bp
+gem 'html5-rails'   # depends on compass-h5bp
 
-gem 'oily_png'
+gem 'oily_png'      # sprites compass 
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
