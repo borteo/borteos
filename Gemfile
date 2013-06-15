@@ -34,3 +34,5 @@ gem "better_errors", ">= 0.7.2", :group => :development
 
 # To use debugger
 # gem 'debugger'
+
+gem 'rack-cachely'

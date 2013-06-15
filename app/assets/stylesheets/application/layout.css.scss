@@ -101,7 +101,7 @@ h2 {
   }
   #me {
     margin: 10px 30px 0;
-    background: url("/assets/me.png") center center no-repeat;
+    background: url("/assets/me.jpg") center center no-repeat;
     width: 300px;
     height: 287px;
     display: inline-block;
@@ -352,12 +352,13 @@ h2 {
   max-width: 700px;
 }
 .description p {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", "Helvetica Neue", sans-serif;
   font-size: 1.6em;
   line-height: 30px;
   text-align: justify;
   margin-bottom: .6em;
   color: #444;
+  @include text-shadow(#FFF 0px 1px 0px);
 }
 
 .plane {

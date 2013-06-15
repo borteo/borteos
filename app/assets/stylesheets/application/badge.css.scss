@@ -1,49 +1,52 @@
-.badge { 
-  text-align: center; 
-  color: #555;
-  padding: 2px 4px;
-  font-size: 1.2em;
-  line-height: 1.6em;
-  height: 1.6em;
-  position: relative;
-  @include box-shadow(rgba(0, 0, 0, 0.1) 0 -1px 1px inset);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+#skills {
+  
+  .badge { 
+    text-align: center; 
+    color: #555;
+    padding: 2px 4px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    height: 1.6em;
+    position: relative;
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0 -1px 1px inset);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-.badge:hover {
-  top: -2px;
-}
+  .badge:hover {
+    top: -2px;
+  }
 
-.frontend {
-  background: rgb(154, 182, 192);
-}
+  .frontend {
+    background: rgb(154, 182, 192);
+  }
 
-.backend {
-  background: #80CB92;
-}
+  .backend {
+    background: #80CB92;
+  }
 
-.ecommerce {
-  background: #FFF;
-}
+  .ecommerce {
+    background: #FFF;
+  }
 
-.test {
-  background: #FBDCA0;
-}
+  .test {
+    background: #FBDCA0;
+  }
 
-.db {
-  background: #7B8085;
-  color: #f4f4f4;
-}
+  .db {
+    background: #7B8085;
+    color: #f4f4f4;
+  }
 
-.apps {
-  background: #91E26A;
-}
+  .apps {
+    background: #91E26A;
+  }
 
-.subversion {
-  background: #DF8989;
-}
+  .subversion {
+    background: #DF8989;
+  }
 
-.os {
-  background: #F6B83F;
-}
+  .os {
+    background: #F6B83F;
+  }
 
+}
