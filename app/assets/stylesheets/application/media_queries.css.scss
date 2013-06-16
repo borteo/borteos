@@ -39,6 +39,25 @@
     width: 260px;
   }
 
+  header .social-network {
+    left: 0;
+  }
+  header .social-network li {
+    right: 0;
+    margin-right: 2px;
+  }
+  #page-nav {
+    top: 30px;
+    margin: 0 auto;
+  }
+  #page-nav a  {
+    display: inline-block;
+    width: 50px;
+  }
+  #page-nav a span {
+    display: none;
+  }
+
 }
 
 // Landscape phone to portrait tablet

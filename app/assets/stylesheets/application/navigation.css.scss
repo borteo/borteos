@@ -1,0 +1,50 @@
+/* The nav is fixed on the right side and we center it by translating it 50%
+(we don't know it's height so we can't use the negative margin trick) */
+
+#page-nav {
+  position: fixed;
+  z-index: 9999;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ 
+  #page-nav a {
+    display: block;
+    position: relative;
+    color: transparent;
+    height: 40px;
+    text-align: right;
+  }
+
+  #page-nav a span {
+    color: rgb(194, 85, 82);
+    position: relative;
+    right: -20px;
+    opacity: 0;
+    @include transition(all 0.2s ease-out);
+  }
+  #page-nav a:hover span {
+    right: 5px;
+    opacity: 1;
+  }
+
+  #page-nav a:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    @include border-radius(50%);
+    border: 4px solid rgb(194, 85, 82);
+  }
+   
+  #page-nav a:hover:after {
+    background: rgba(194, 85, 82, 0.6);
+  }
+   
+  #page-nav a.current:after {
+    background: rgb(194, 85, 82);
+  }
