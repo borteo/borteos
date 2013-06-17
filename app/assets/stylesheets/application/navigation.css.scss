@@ -22,7 +22,7 @@
 
   #page-nav a span {
     color: rgb(194, 85, 82);
-    position: relative;
+    position: absolute;
     right: -20px;
     opacity: 0;
     @include transition(all 0.2s ease-out);
