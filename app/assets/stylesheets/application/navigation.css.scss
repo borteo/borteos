@@ -24,6 +24,7 @@
     opacity: 0;
     color: rgb(194, 85, 82);
     position: absolute;
+    width: 5em;
     right: -20px;
     @include transition(all 0.2s ease-out);
   }
