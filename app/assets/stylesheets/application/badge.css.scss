@@ -1,6 +1,6 @@
 #skills {
   
-  .badge { 
+  span.badge { 
     text-align: center; 
     color: #555;
     padding: 2px 4px;
@@ -12,40 +12,40 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .badge:hover {
+  span.badge:hover {
     top: -2px;
   }
 
-  .frontend {
+  span.frontend {
     background: rgb(154, 182, 192);
   }
 
-  .backend {
+  span.backend {
     background: #80CB92;
   }
 
-  .ecommerce {
+  span.ecommerce {
     background: #FFF;
   }
 
-  .test {
+  span.test {
     background: #FBDCA0;
   }
 
-  .db {
+  span.db {
     background: #7B8085;
     color: #f4f4f4;
   }
 
-  .apps {
+  span.apps {
     background: #91E26A;
   }
 
-  .subversion {
+  span.subversion {
     background: #DF8989;
   }
 
-  .os {
+  span.os {
     background: #F6B83F;
   }
 

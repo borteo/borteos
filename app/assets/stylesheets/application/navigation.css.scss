@@ -21,10 +21,10 @@
   }
 
   #page-nav a span {
+    opacity: 0;
     color: rgb(194, 85, 82);
     position: absolute;
     right: -20px;
-    opacity: 0;
     @include transition(all 0.2s ease-out);
   }
   #page-nav a:hover span {
