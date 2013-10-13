@@ -1,6 +1,8 @@
 %section#about-me
   .wrapper
-    =link_to "Download Curriculum", "http://dl.dropboxusercontent.com/u/1089758/matteoborgato_cv.pdf", :id => "curriculum", :title => "Download my Curriculum Vitae", :_target => "blank"
+    #curriculum-vitae
+      .notice-hand
+      =link_to "Download Curriculum", "http://dl.dropboxusercontent.com/u/1089758/matteoborgato_cv.pdf", :id => "curriculum-download", :title => "Download my Curriculum Vitae", :_target => "blank"
     %h2 About me
     .row
       #me{:title => "Hire me!", "data-content" => "I am looking for a job"}
@@ -22,13 +24,13 @@
             %i.icons-plus
 
         %p.tags
-          %span.badge.frontend CSS
-          %span.badge.frontend HTML5
+          %span.badge.frontend AngularJS
+          %span.badge.frontend Backbone.js
           %span.badge.frontend JavaScript
+          %span.badge.frontend CSS3
+          %span.badge.frontend HTML5
           %span.badge.frontend Jquery
           %span.badge.frontend.hide Mootools
-          %span.badge.frontend.hide CoffeeScript
-          %span.badge.frontend.hide Mustache
           
           %span.badge.backend Ruby on Rails
           %span.badge.backend PHP
@@ -38,6 +40,7 @@
           %span.badge.hide.ecommerce Magento
           %span.badge.hide.ecommerce SEO
 
+          %span.badge.hide.test Jasmine
           %span.badge.hide.test RSpec
           %span.badge.hide.test Capybara
 
@@ -68,8 +71,8 @@
       %span.contact Mobile
       %i.icons-celIT
       +39 349 4246616 
-      %i.icons-celNL
-      +31 621 360018
+      %i.icons-celUK
+      +44 745 4815454
     %p
       %span.contact E-mail
       %i.icons-envelope

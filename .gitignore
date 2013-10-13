@@ -30,4 +30,8 @@ rerun.txt
 pickle-email-*.html
 .project
 
+public/assets
+
 .DS_Store
+
+*.psd

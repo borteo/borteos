@@ -71,23 +71,42 @@ h2 {
     padding-bottom: 12px;
   }
 }
-  #curriculum {
+
+#curriculum-vitae {
+  float: right;
+  margin-top: 20px;
+}
+  #curriculum-vitae .notice-hand {
+    background: url("/assets/notice-hand.png") no-repeat transparent;
+    height: 111px;
+    width: 180px;
+    display: inline-block;
+    vertical-align: middle;
+    animation-duration: 1s;
+    animation-name: changemargin;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+
+  }
+  #curriculum-download {
     text-decoration: none;
     background: rgba(255, 255, 255, 0.7);
     border: 5px dotted white;
     color: #3A87AD;
-    float: right;
-    font-family: 'Six Caps',sans-serif;
+    font-family: 'Six Caps', sans-serif;
     font-size: 2.8em;
     line-height: 45px;
     padding: 8px 4px;
-    margin-top: 20px;
     text-align: center;
     width: 120px;
+    display: inline-block;
+    vertical-align: middle;
   }
-  #curriculum:hover {
+  #curriculum-download:hover {
     background: rgba(255, 255, 255, 1);
   }
+
   #me {
     margin: 10px 30px 0;
     background: url("/assets/me.jpg") center center no-repeat;
@@ -143,7 +162,7 @@ h2 {
 
 #contacts:before,
 #contacts:after {
-  background: url("/assets/stripe.png") repeat scroll 0 0 transparent;
+  background: url("/assets/stripe.png") repeat-x transparent;
   content: "";
   display: block;
   height: 6px;
@@ -191,7 +210,7 @@ h2 {
      vertical-align: middle;
      width: 20px;
     }
-  .icons-nl {
+  .icons-celUK {
     margin-left: 2em;
   }
  }
@@ -342,5 +361,15 @@ footer {
   a, a:hover {
     text-decoration: underline;
     color: #C25552;
+  }
+}
+
+@keyframes changemargin {
+  from {
+    margin-right: 0px;
+  }
+
+  to {
+    margin-right: 60px;
   }
 }
