@@ -42,8 +42,6 @@ Portfolio::Application.configure do
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
 
-  # Add the Rack::Cachely middleware:
-  config.middleware.use Rack::Cachely
   # Turn on caching:
   config.action_controller.perform_caching = true
 

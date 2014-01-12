@@ -16,7 +16,7 @@ group :assets do
   gem 'compass-h5bp'
 end
 
-gem "haml-rails", ">= 0.4"
+gem 'haml-rails', '>= 0.4'
 gem 'jquery-rails'
 gem 'html5-rails'   # depends on compass-h5bp
 
@@ -27,7 +27,7 @@ gem 'oily_png'      # sprites compass
 
 # Use unicorn as the app server
 gem 'unicorn', :group => :development
-gem "better_errors", ">= 0.7.2", :group => :development
+gem 'better_errors', '>= 0.7.2', :group => :development
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -35,4 +35,5 @@ gem "better_errors", ">= 0.7.2", :group => :development
 # To use debugger
 # gem 'debugger'
 
-gem 'rack-cachely'
+# email delivery
+gem 'pony'
