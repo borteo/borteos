@@ -36,4 +36,6 @@ gem 'better_errors', '>= 0.7.2', :group => :development
 # gem 'debugger'
 
 # email delivery
-gem 'pony'
+# gem 'pony'
+
+gem "rest-client", "~> 1.6.7"

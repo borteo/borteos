@@ -90,8 +90,6 @@ GEM
     oily_png (1.1.0)
       chunky_png (~> 1.2.7)
     polyglot (0.3.3)
-    pony (1.6.2)
-      mail (>= 2.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -158,8 +156,8 @@ DEPENDENCIES
   html5-rails
   jquery-rails
   oily_png
-  pony
   rails (= 3.2.11)
+  rest-client (~> 1.6.7)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   unicorn
