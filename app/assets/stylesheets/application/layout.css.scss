@@ -182,40 +182,119 @@ h2 {
   position: relative;
   z-index: 10;
   background: white url("/assets/bg-contacts.png");
+  p {
+    font-size: 1.4em;
+    font-family: "Josefin Sans","Helvetica Neue",sans-serif;
+    color: #666;
+  }
   h2:first-letter {
     background: #F7F57E;
     font-size: 2.2em;
     letter-spacing: 4px;
     @include text-shadow((#FFEDC9 2px 2px 0px), (#FFEDC9 3px 3px 0px));
   }
-  .details {
+
+  form {
+
     padding: 30px 0px;
     font-size: 1.5em;
-    .contact {
+    margin: 0 auto;
+    .label {
       display: inline-block;
       font-family: monospace;
       font-size: 1.8em;
-      width: 15%;
       color: #CCC;
-      @include text-shadow(#999 0px 2px 0px);  
+      @include text-shadow(#999 0px 2px 0px); 
+      display: block; 
     }
-    span {
-      padding-right: 20px;
-    }
-    i {
-     display: inline-block;
-     height: 19px;
-     line-height: 14px;
-     margin-top: 4px;
-     vertical-align: middle;
-     width: 20px;
-    }
-  .icons-celUK {
-    margin-left: 2em;
+
+
+  .input,
+  .text-input {
+    font-family: "Josefin Sans","Helvetica Neue",sans-serif;
+    color: #777;
+    display: block;
+    font-size: 1.2em;
+    width: 100%;
+  }  
+
+  .input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
   }
+  .text-input {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
+    @include box-shadow(rgba(0, 0, 0, 0.2) 0 0 2px 4px inset);
+    padding: .5em .2em 0 .2em;
+  }
+  .form-left,
+  .form-right {
+    width: 48%;
+    float: left;
+    display: inline-block;
+    position: relative;
+    margin-right: 2%;
+  }
+  .form-left div {
+    position: relative;
+  }
+  .form-action {
+    clear: both;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-error {
+    font-size: 12px;
+    position: absolute;
+    color: rgba(255, 0, 0, 0.6);
+    bottom: -18px;
+  }
+
+  input[type=submit] {
+    background-color: #F7F57E;
+    border: medium none;
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 4;
+    outline: medium none;
+    padding: 25px 0;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    color: #555;
+    font-family: "Times New Roman";
+  }
+
+  .loading {
+    background: url("/assets/loader.gif") 20% center no-repeat;
+  }
+
+  .result {
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    @include opacity(0);
+    @include transition(all 0.5s ease-in-out);
+  }
+  .result.show {
+    top: 0px;
+    @include opacity(1)
+  }
+
  }
 }
 
+#contact_name {
+  margin-bottom: 15px;
+}
 
 // NEW CSS --------------------------------
 

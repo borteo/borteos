@@ -37,5 +37,20 @@ $(function() {
     "data_track_addressbar": true,
   };
 
+  $.validate();
+
+
+  $('#contacts')
+    .bind('ajax:complete', function (evt, xhr, settings) {
+      $('#contacts :submit').removeClass('loading');
+      $('#contacts .result')
+        .html('')
+        .html(xhr.responseText)
+        .addClass('show');
+
+    })
+    .bind("ajax:beforeSend", function (evt, xhr, settings) {
+      $('#contacts :submit').addClass('loading');
+    })
 
 });

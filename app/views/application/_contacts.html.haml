@@ -2,20 +2,7 @@
   .row
     %h2 Contacts
   .row.details
-    %p
-      %span.contact Mobile
-      %i.icons-celIT
-      +39 349 4246616 
-      %i.icons-celUK
-      +44 745 4815454
-    %p
-      %span.contact E-mail
-      %i.icons-envelope
-      hello (at) matteoborgato.com
-    %p
-      %span.contact Skype
-      %i.icons-skype
-      matteo_borgato
+    = render 'contacts/new'
 
   .plane
 
@@ -27,3 +14,6 @@
       %a.addthis_button_preferred_4
       %a.addthis_button_compact
       %a.addthis_counter.addthis_bubble_style
+
+
+  

@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.11'
 
-gem 'heroku'
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -38,4 +36,8 @@ gem 'better_errors', '>= 0.7.2', :group => :development
 # email delivery
 # gem 'pony'
 
+gem "figaro"
+
 gem "rest-client", "~> 1.6.7"
+
+gem 'simple_form'

@@ -1,65 +1,8 @@
-%section#about-me
-  .wrapper
-    #curriculum-vitae
-      .notice-hand
-      =link_to "Download Curriculum", "http://dl.dropboxusercontent.com/u/1089758/matteoborgato_cv.pdf", :id => "curriculum-download", :title => "Download my Curriculum Vitae", :_target => "blank"
-    %h2 About me
-    .row
-      #me{:title => "Hire me!", "data-content" => "I am looking for a job"}
-      .description.josefin
-        %p
-          Born and raised in Venice, I graduated from Universit&agrave; degli Studi di Padova (in Padua) with a degree in Computer Science in 2007 and have been working with the Web ever since.
-        %p
-          I am a front-end developer, with more than #{ Date.today.year - 2007 } years under the belt. Currently I live in the cosmopolitan, hectic and vibrant London - United Kindom.
-        %p
-          I have also back-end skills but currently I focus on highly intensive front-end web applications and love it.
-          
+#container
+  = render "header"
 
-    .row
-      #skills
-
-        %h3
-          Skills
-          %span#skills-more 
-            %i.icons-plus
-
-        %p.tags
-          %span.badge.frontend AngularJS
-          %span.badge.frontend Backbone.js
-          %span.badge.frontend JavaScript
-          %span.badge.frontend CSS3
-          %span.badge.frontend HTML5
-          %span.badge.frontend Jquery
-          %span.badge.frontend.hide Mootools
-          
-          %span.badge.backend Ruby on Rails
-          %span.badge.backend PHP
-          %span.badge.backend.hide Python
-          
-          %span.badge.hide.ecommerce E-commerce
-          %span.badge.hide.ecommerce Magento
-          %span.badge.hide.ecommerce SEO
-
-          %span.badge.hide.test Jasmine
-          %span.badge.hide.test RSpec
-          %span.badge.hide.test Capybara
-
-          %span.badge.db MySQL
-          %span.badge.db.hide Oracle
-          %span.badge.db PostgreSQL
-          %span.badge.db MongoDB
-
-          %span.badge.subversion Git
-          %span.badge.subversion SVN
-
-          %span.badge.apps Photoshop
-          %span.badge.apps Illustrator
-          %span.badge.apps.hide CorelDraw
-          %span.badge.apps.hide Inkscape
-
-          %span.badge.os.hide Mac OS
-          %span.badge.os.hide GNU/Linux
-          %span.badge.os.hide Windows
-          
-
-
+  #main
+    = render "portfolio"
+    = render "about-me"
+    = render "contacts"
+    = render "footer"

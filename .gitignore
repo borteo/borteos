@@ -35,3 +35,6 @@ public/assets
 .DS_Store
 
 *.psd
+
+# Ignore application configuration
+/config/application.yml

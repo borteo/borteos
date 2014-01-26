@@ -5,14 +5,7 @@
   %body
     = render "chromeframe"
 
-    #container
-      = render "header"
-
-      #main
-        = render "portfolio"
-        = yield
-        = render "contacts"
-        = render "footer"
+    = yield
 
     -# Google Analytics
     :javascript
@@ -26,4 +19,6 @@
 
     -# Javascript at the bottom for fast page loading
     = render "javascripts"
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.38/jquery.form-validator.min.js", :type => "text/javascript"}
+    
     %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51bb12207392fc99", :type => "text/javascript"}
