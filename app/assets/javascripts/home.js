@@ -64,17 +64,17 @@ $(function() {
   });
 
   $('#og-grid .thumb').on('click', function (el) {
-    mixpanel.track("Jobs", {
-      'Details': el.currentTarget.alt
+    mixpanel.track("Job-detail", {
+      'name': el.currentTarget.alt
     });  
   });
 
   $('#og-grid').on('click', '.og-expander-inner', function(el) {
-    if (!el.target.href) {
+    if (typeof el.target.href === "undefined") {
       return;
     }
-    mixpanel.track("Jobs", {
-      'Deep-link': el.target.href
+    mixpanel.track("Job-visit", {
+      'name': el.target.href
     }); 
   });
 
