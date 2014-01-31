@@ -51,6 +51,11 @@ $(function() {
     })
     .bind("ajax:beforeSend", function (evt, xhr, settings) {
       $('#contacts :submit').addClass('loading');
-    })
+    });
+
+  $("#curriculum-vitae").on('click', function() {
+    analytics.track('Downloaded Curriculum');
+  })
+  
 
 });
