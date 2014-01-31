@@ -1,9 +1,3 @@
-analytics.initialize({
-  'Google Analytics': {
-    trackingId: 'UA-20912101-2'
-  }
-});
-
 $(function() {
   cbpFixedScrollLayout.init();
 
@@ -64,5 +58,11 @@ $(function() {
   });
 
   analytics.page('Homepage');
-  
+
+  analytics.initialize({
+    'Google Analytics': {
+      trackingId: 'UA-20912101-2'
+    }
+  });
+
 });
