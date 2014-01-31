@@ -49,20 +49,33 @@ $(function() {
         .addClass('show');
 
     })
-    .bind("ajax:beforeSend", function (evt, xhr, settings) {
+    .bind('ajax:beforeSend', function (evt, xhr, settings) {
       $('#contacts :submit').addClass('loading');
     });
 
-  $("#curriculum-vitae").on('click', function() {
-    analytics.track('Downloaded Curriculum');
+  $('#curriculum-download').on('click', function() {
+    mixpanel.track('Downloaded CV');
   });
 
-  analytics.page('Homepage');
+  $('#social-network a').on('click', function (el) {
+    mixpanel.track("Social Network", {
+      'Link': el.currentTarget.hostname
+    });  
+  });
 
-  analytics.initialize({
-    'Google Analytics': {
-      trackingId: 'UA-20912101-2'
+  $('#og-grid .thumb').on('click', function (el) {
+    mixpanel.track("Jobs", {
+      'Details': el.currentTarget.alt
+    });  
+  });
+
+  $('#og-grid').on('click', '.og-expander-inner', function(el) {
+    if (!el.target.href) {
+      return;
     }
+    mixpanel.track("Jobs", {
+      'Deep-link': el.target.href
+    }); 
   });
 
 });

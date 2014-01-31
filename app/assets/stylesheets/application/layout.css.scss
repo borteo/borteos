@@ -347,25 +347,25 @@ h2 {
     display: block;
     padding-bottom: 5px;
   }
-  header .social-network {
+  header #social-network {
     margin-top: 0;
     float:left;
     list-style:none;
     text-align:center;
     position:relative;
     left:49%;
-  }
-    header .social-network li {
+  
+    li {
       float:left;
       list-style:none;
       margin-right: 20px;
       position:relative;
       right:60%;
     }
-    header .social-network li:last-child {
+    li:last-child {
       margin-right: 0px;
     }
-    header .social-network a {
+    a {
       position: relative;
       @include box-shadow(#999 0 2px 2px);
       @include border-radius(50%);
@@ -374,17 +374,18 @@ h2 {
       height: 61px;
       display: block;
     }
-    header .social-network a:hover {
+    a:hover {
       @include box-shadow(#999 0 0px 2px);
       @include border-radius(30px);
       border: none;
     }
-    header .social-network a:active {
+    a:active {
       @include box-shadow(#555 0 2px 15px inset);
       @include border-radius(30px);
       border: 1px solid rgba(255, 255, 255, 0.5); 
       top: -2px;
     }
+  }
 
 #main {
   position: absolute;
