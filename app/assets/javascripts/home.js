@@ -1,3 +1,9 @@
+analytics.initialize({
+  'Google Analytics': {
+    trackingId: 'UA-20912101-2'
+  }
+});
+
 $(function() {
   cbpFixedScrollLayout.init();
 
@@ -55,7 +61,8 @@ $(function() {
 
   $("#curriculum-vitae").on('click', function() {
     analytics.track('Downloaded Curriculum');
-  })
-  
+  });
 
+  analytics.page('Homepage');
+  
 });
