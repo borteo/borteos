@@ -76,6 +76,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.8.4)
+    newrelic_rpm (3.9.4.245)
     oily_png (1.1.0)
       chunky_png (~> 1.2.7)
     polyglot (0.3.3)
@@ -146,6 +147,7 @@ DEPENDENCIES
   haml-rails (>= 0.4)
   html5-rails
   jquery-rails
+  newrelic_rpm
   oily_png
   rails (= 3.2.11)
   rest-client (~> 1.6.7)

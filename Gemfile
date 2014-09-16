@@ -41,3 +41,5 @@ gem "figaro"
 gem "rest-client", "~> 1.6.7"
 
 gem 'simple_form'
+
+gem 'newrelic_rpm'
