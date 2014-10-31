@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.1.2'
 gem 'rails', '3.2.11'
 
 # Gems used only for assets and not required
@@ -32,9 +32,6 @@ gem 'better_errors', '>= 0.7.2', :group => :development
 
 # To use debugger
 # gem 'debugger'
-
-# email delivery
-# gem 'pony'
 
 gem "figaro"
 
